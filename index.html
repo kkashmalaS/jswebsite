@@ -1,0 +1,419 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slider {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .slide-text-bottom {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gradient-to-r from-yellow-500 to-yellow-300 shadow-lg py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://craftohtml.themezaa.com/images/demo-finance-logo-white.png" alt="Logo" class="h-8 mr-2">
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Home</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">About</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Expertiese</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Team</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Pricing</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">News</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="bg-yellow-500 hover:bg-yellow-300 text-white px-4 py-2 rounded-md transition duration-300  font-bold">Contact</button>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1664575599730-0814817939de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 1">
+      <div class="slide-text flex">Giving idea for your investment</div>
+      <div class="slide-text-bottom">Started Now</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 2">
+      <div class="slide-text">Making investment and smart idea</div>
+      <div class="slide-text-bottom">Started Now</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1664575599736-c5197c684128?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c2luZXNzfGVufDB8fDB8fHww" alt="Image 3">
+      <div class="slide-text">Contact Us Today</div>
+      <div class=" border border-2 bg-yellow-300">Started Now</div>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .slider {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-align: center; /* Center align the text */
+    }
+
+    .slide-text-bottom {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-align: center; /* Center align the text */
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gradient-to-r from-yellow-500 to-yellow-300 shadow-lg py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://craftohtml.themezaa.com/images/demo-finance-logo-white.png" alt="Logo" class="h-8 mr-2">
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Home</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">About</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Expertiese</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Team</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Pricing</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">News</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="bg-yellow-500 hover:bg-yellow-300 text-white px-4 py-2 rounded-md transition duration-300  font-bold">Contact</button>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1664575599730-0814817939de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 1">
+      <div class="slide-text flex">Giving idea for your investment</div>
+      <div class="slide-text-bottom">Started Now</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 2">
+      <div class="slide-text">Making investment and smart idea</div>
+      <div class="slide-text-bottom">Started Now</div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1664575599736-c5197c684128?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c2luZXNzfGVufDB8fDB8fHww" alt="Image 3">
+      <div class="slide-text">Contact Us Today</div>
+      <div class="slide-text-bottom">Started Now</div>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    .slider {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .slide-button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffd700;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .slide-button:hover {
+      background-color: #ffa500;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gradient-to-r from-yellow-500 to-yellow-300 shadow-lg py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://craftohtml.themezaa.com/images/demo-finance-logo-white.png" alt="Logo" class="h-8 mr-2">
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Home</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">About</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Expertiese</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Team</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Pricing</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">News</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-gray-600 transition duration-300 text-white font-bold">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="bg-yellow-500 hover:bg-yellow-300 text-white px-4 py-2 rounded-md transition duration-300  font-bold">Contact</button>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1664575599730-0814817939de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 1">
+      <div class="slide-text flex">Giving idea for your investment
+        <br>
+        <button class="slide-button -my-28 border border-2  text-sm shadow">Started Now</button>
+      </div>
+      
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3N8ZW58MHx8MHx8fDA%3D" alt="Image 2">
+      <div class="slide-text">Making investment and smart idea
+        <br>
+        <button class="slide-button -my-28 border border-2  text-sm shadow">Started Now</button>
+      </div>
+     
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1664575599736-c5197c684128?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1c2luZXNzfGVufDB8fDB8fHww" alt="Image 3">
+      <div class="slide-text">Contact Us Today
+
+        <br>
+        <button class="slide-button -my-28 border border-2  text-sm shadow">Started Now</button>
+      </div>
+      
+    </div>
+  </div>
+  <!-- <div class="container mx-auto py-8 bg-grey-100 animate__animated animate__fadeInDown">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInLeft">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pink-hi-tea-menu-instagram-image-design-template-130d10f5da97f943b00494e39f37082c_screen.jpg?ts=1638332787" alt="Menu Item" class="mb-4">
+            <h2 class="text-xl font-bold mb-2">HI-TEA Breakfast Tea</h2>
+            <p class="text-gray-600 mb-4">A classic black tea blend with a robust flavor.</p>
+            <button class="bg-red-900 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Order Now</button>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInUp">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.oxbv1nkN_udtBsVxz3gI8AHaHa&pid=Api&P=0&h=220" alt="Menu Item" class="mb-4">
+            <h2 class="text-xl font-bold mb-2">Kaiva Tea</h2>
+            <p class="text-gray-600 mb-4">A light and delicate black tea from the Dark region of Pakistan.</p>
+            <button class="bg-red-900 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Order Now</button>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInRight">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.nFtIVafU2kHLhh4bLjFb1QHaGl&pid=Api&P=0&h=220" alt="Menu Item" class="mb-4">
+            <h2 class="text-xl font-bold mb-2">Jasmine Green Tea</h2>
+            <p class="text-gray-600 mb-4">A fragrant green tea infused with jasmine flowers.</p>
+            <button class="bg-red-900 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Order Now</button>
+        </div>
+    </div> -->
+    
+
+  <!----3 div plan market growth-->
+  <div class="container    -my-40  mx-auto py-8  animate__animated animate__fadeInDown">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8 ">
+      <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInLeft">
+        <button class="rounded-full border border-2 py-6 px-8 text-lg mx-32">01</button>
+        <h2 class="text-lg text-black font-bold mb-2 my-6 mx-28 flex">Visit to plan</h2>
+           <h2 class="text-gray-300 my-3 mx-16"> Lorem ipsum simply dummy text printing typesetting.</h2>
+        <p class="text-gray-600 mb-4 mx-28 text-yellow-500 underline">  94% SCORE</p>
+       
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInLeft">
+        <button class="rounded-full border border-2 py-6 px-8 text-lg mx-32">01</button>
+        <h2 class="text-lg text-black font-bold mb-2 my-6 mx-28 flex"> plan to Market</h2>
+           <h2 class="text-gray-300 my-3 mx-16"> Lorem ipsum simply dummy text printing typesetting.</h2>
+        <p class="text-gray-600 mb-4 mx-28 text-yellow-500 underline">  96% SCORE</p>
+       
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-6 animate__animated animate__fadeInLeft">
+        <button class="rounded-full border border-2 py-6 px-8 text-lg mx-32">01</button>
+        <h2 class="text-lg text-black font-bold mb-2 my-6 mx-28 flex">Market Growth</h2>
+           <h2 class="text-gray-300 my-3 mx-16"> Lorem ipsum simply dummy text printing typesetting.</h2>
+        <p class="text-gray-600 mb-4 mx-28 text-yellow-500 underline">  98% SCORE</p>
+       
+      </div>
+ 
+  
+  
+  
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>
